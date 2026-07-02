@@ -1,5 +1,6 @@
 
 # 🦙 Ollama Auto Puller (Robust Model Downloader)
+> 🌍 **[Read this in Persian (فارسی) 🇮🇷](./README-fa.md)**
 
 Downloading massive AI models via [Ollama](https://ollama.com/) on an unstable internet connection can be a nightmare. Frequent disconnections, interrupted downloads, and worst of all, a known Ollama bug that wipes out a 99% downloaded large layer and forces it to start from scratch!
 
