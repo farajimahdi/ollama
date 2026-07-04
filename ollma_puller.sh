@@ -6,7 +6,19 @@
 # Jul 2026
 # https://github.com/farajimahdi/ollama
 # ══════════════════════════════════════════════════════
-MODELS=("llama3.3:70b" "qwen3.6:35b" "gemma4:31b" "llama4:latest")
+
+MODELS=(
+    "llama3.3:70b"
+    "qwen3.6:35b"
+    "gemma4:31b"
+    "llama4:latest"
+    "llama4:128x17b"
+    "ornith:35b"
+    "laguna-xs-2.1:bf16"
+    "north-mini-code-1.0:bf16"
+    "north-mini-code-1.0:mlx-bf16"
+    "lfm2.5:8b"
+)
 
 echo "══════════════════════════════════════════════════════"
 echo "Starting Robust Ollama Auto Puller..."
