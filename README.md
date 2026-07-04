@@ -6,9 +6,9 @@ Downloading massive AI models via [Ollama](https://ollama.com/) on an unstable i
 
 This Bash script is designed to make the pulling process completely automated, bulletproof, and smart.
 
-## ✨ Key Features
+## Key Features
 
-* 🔄 **Auto-Retry:** If your internet drops or the server times out, the script immediately and infinitely resumes the `pull` process until the model is fully downloaded.
+* **Auto-Retry:** If your internet drops or the server times out, the script immediately and infinitely resumes the `pull` process until the model is fully downloaded.
 * **Bypasses Ollama's `partial-0` Bug:** Sometimes, after finishing a huge layer, Ollama throws a `no such file` error, causing the entire downloaded layer to be lost. This script intelligently detects this error and creates a dummy file to satisfy the cleanup process, preventing the layer from re-downloading from scratch.
 * **Batch Downloading:** Pass a list of models to the script, and it will download them sequentially in a queue.
 * **Background Execution (via `tmux`):** Even if you shut down your laptop or lose your SSH connection to the server, the downloads will safely continue in the background.
@@ -28,6 +28,13 @@ MODELS=(
     "llama3.3:70b"
     "qwen3.6:35b"
     "gemma4:31b"
+    "llama4:latest"
+    "llama4:128x17b"
+    "ornith:35b"
+    "laguna-xs-2.1:bf16"
+    "north-mini-code-1.0:bf16"
+    "north-mini-code-1.0:mlx-bf16"
+    "lfm2.5:8b"
 )
 ```
 
